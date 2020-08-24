@@ -1,10 +1,13 @@
 {
   "name": "dark-room",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +20,15 @@
     "mongoose": "^5.9.16",
     "multer": "^1.4.2",
     "uuid": "^8.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suejohnmo/gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suejohnmo/gallery/issues"
+  },
+  "homepage": "https://github.com/suejohnmo/gallery#readme",
+  "description": ""
 }
