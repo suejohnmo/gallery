@@ -2,10 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
+const config = require("./_config");
 
 // Define routes
 let index = require("./routes/index");
 let image = require("./routes/image");
+
+// Initializing the app
+const app = express();
 
 const MONGODB_URI =
   process.env.MONGODB_URI || config.mongoURI[app.settings.env];
@@ -26,9 +30,6 @@ mongoose.connect(
 // db.once("open", () => {
 //   console.log("Database connected successfully");
 // });
-
-// Initializing the app
-const app = express();
 
 // View Engine
 app.set("view engine", "ejs");
