@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy to Heroku') {
             steps {
                 withCredentials([usernameColonPassword(credentialsId: 'suejohnmo', variable: 'HEROKU_CREDENTIALS' )]){
-                    sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/gallerysue.git master'
+                    sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/shielded-temple-81487.git master'
                 }
             }
         }
