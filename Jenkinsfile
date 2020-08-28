@@ -16,8 +16,8 @@ pipeline {
         }
         stage('Deploy to Heroku') {
             steps {
-                withCredentials([usernameColonPassword(credentialsId: 'heroku', variable: 'HEROKU_CREDENTIALS' )]){
-                    sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/obscure-stream-99804.git master'
+                withCredentials([usernameColonPassword(credentialsId: 'suejohnmo', variable: 'HEROKU_CREDENTIALS' )]){
+                    sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/gallerysue.git master'
                 }
             }
         }
